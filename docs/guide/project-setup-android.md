@@ -22,8 +22,12 @@ For development on Android, you'll need a combination of 3 applications.
 
 These file managers are known to have ZIP archiving and view-only access to the `Android/data` folder:
 
-1. [**X-Plore**](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore) - a powerful file manager with dual-pane tree view, a built-in text editor (not code), several file compression formats (ZIP, 7zip, RAR, etc.), and more. On rooted devices, X-Plore has edit access to `Android/data` and root directories.
-2. [**Total Commander**](https://play.google.com/store/apps/details?id=com.ghisler.android.TotalCommander) - not as powerful out of the box compared to X-Plore, but contains some of the same features including dual pane, ZIP and RAR archives, and view-only access to `Android/data`. Total Commander has list view instead of tree and many other features that require plugins (apps from Google Play) to use.
+1. [**Zarchiver**](https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver) -  a versatile archive manager that supports a wide range of compression formats (ZIP, 7z, RAR, etc.) and allows users to create, extract, and manage compressed files. It features options for password-protected archives, partial archive extraction, and multi-threading for faster performance. On rooted devices or while using [**Shizuku**](https://play.google.com/store/apps/details?id=moe.shizuku.privileged.api), Zarchiver can access and modify files in Android/data and system directories, making it ideal for advanced file management. 
+   
+
+2. [**X-Plore**](https://play.google.com/store/apps/details?id=com.lonelycatgames.Xplore) - a powerful file manager with dual-pane tree view, a built-in text editor (not code), several file compression formats (ZIP, 7zip, RAR, etc.), and more. On rooted devices, X-Plore has edit access to `Android/data` and root directories.
+
+3. [**Total Commander**](https://play.google.com/store/apps/details?id=com.ghisler.android.TotalCommander) - not as powerful out of the box compared to X-Plore, but contains some of the same features including dual pane, ZIP and RAR archives, and view-only access to `Android/data`. Total Commander has list view instead of tree and many other features that require plugins (apps from Google Play) to use.
 
 ### Code Editors
 
@@ -36,15 +40,15 @@ Acode is the only powerful code editor actively being developed on Android at th
 ### Image Editors
 
 1. [**Pocket Paint**](https://play.google.com/store/apps/details?id=org.catrobat.paintroid) - lightweight editor with the bare minimum features needed for any add-on creation. This app is easy to use and allows importing other images over others. Saves in JPG (compressed), PNG (lossless, with transparency), and ORA (multi-layer images). This app is open source.
-2. [**Pixly**](https://play.google.com/store/apps/details?id=com.meltinglogic.pixly&hl=en) - very lightweight, no ads or in app purchases. Plentiful tools and customizable brushes, ability to save palettes internally or externally.
-3. [**Pixel Art editor**](https://play.google.com/store/apps/details?id=net.spc.app.pixelarteditor&hl=en) - a simple lightweight app. Would be the best if you need just to draw some texture-placeholder.
+2. [**PixaPencil**](https://f-droid.org/en/packages/com.therealbluepandabear.pixapencil) - very lightweight, no ads or in app purchases. Plentiful tools and customizable brushes, ability to save palettes internally or externally although only available in F-droid, Allows for some easy quick textures.
+3. [**Pix2D**](https://play.google.com/store/apps/details?id=com.pix2d.pix2dapp) - a simple lightweight app. Would be the best if you need just to draw some texture-placeholder or edit some small textures and it does allow for making animations.
 
 ## Your Workspace
 
 :::tip
 In this version of the guide, "BP" refers to your behaviour pack folder and "RP" refers to your resource pack folder in your workspace. For locations in files or directories, `../<current location>` indicates "From last location" followed by the added space (e.g.: `/one/two/three/file.txt` would be shortened to `../three/file.txt`)
 
-If your device is rooted, you can follow the main project setup using the `/Android/data/com.mojang.minecraftpe/files/games/com.mojang` development behaviour and resource pack folders directly. Otherwise, follow the steps below.
+If your device is rooted or you have setup Shizuku, you can follow the main project setup using the `/Android/data/com.mojang.minecraftpe/files/games/com.mojang` [here](https://wiki.bedrock.dev/guide/project-setup.html) development behaviour and resource pack folders directly. Otherwise, follow the steps below or Setup Shizuku.
 :::
 
 Before we begin, you need a workspace. Using your file manager, navigate to your Internal Storage (In most cases, it's `/`. In others, the full path (e.g.: `/storage/emulated/0/`) is displayed. Both are acceptable.) and create a folder that will contain your packs. For this example, our full directory is `/Minecraft Packs/MyFirstAddon`. From there, you'll need one folder for both your behaviour and resource packs (e.g.: `../MyFirstAddon/addonBP` and `../MyFirstAddon/addonRP`).
@@ -61,6 +65,25 @@ Now that you have the workplace setup, code editors should have a way for you to
 :::tip
 You can create new files and folders inside your packs from the file browser by tapping and holding on the folder you want to create the item in.
 :::
+
+## Shizuku 
+:::tip
+Shizuku only works With Dev mode enabled and needs to be started after restart. 
+You also need Android 11 or higher for Shizuku to work.
+:::
+
+This Section is optional.
+if you want to be able to use development folders without rooting your device then Shizuku might help you Shizuku allows you to write to Android/data if it's running and your using a supported file manger like [**Zarchiver**](https://play.google.com/store/apps/details?id=ru.zdevs.zarchiver).
+
+To setup it app first enable developer mode this process differs from phone to another 
+
+open dev options and enable USB debug and wireless debugging 
+open Shizuku Click Pairing 
+Developer options
+scroll down untill you see wireless debugging enable it and then click on it 
+click pair with code and enter the code in the notification.
+
+Now start Shizuku.
 
 ## BP & RP Manifests
 
