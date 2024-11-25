@@ -38,7 +38,7 @@ Alongside the Vanilla BDS offering, many community projects exist, in a variety 
 | PHP        | [Still Active](#php)        : 3 < [Discontinued](#php-1)        : 40 |
 | Java       | [Still Active](#java)       : 6 < [Discontinued](#java-1)       : 14 |
 | C++        | [Still Active](#c)          : 2 < [Discontinued](#c-1)          : 5  |
-| TypeScript | [Still Active](#typescript) : 3 < [Discontinued](#typescript-1) : 2  |
+| TypeScript | [Still Active](#typescript) : 2 < [Discontinued](#typescript-1) : 3  |
 | Go         | [Still Active](#go)         : 1 < [Discontinued](#go-1)         : 5  |
 | JavaScript | Still Active                : 0 < [Discontinued](#javascript)   : 7  |
 | Rust       | [Still Active](#rust)       : 1 < [Discontinued](#rust-1)       : 3  |
@@ -69,7 +69,6 @@ Alongside the Vanilla BDS offering, many community projects exist, in a variety 
 
 ### TypeScript
 
--   [BDSX](https://github.com/bdsx/bdsx)
 -   [JSPrismarine](https://github.com/JSPrismarine/JSPrismarine)
 -   [Serenity](https://github.com/SerenityJS)
 
@@ -148,6 +147,7 @@ Alongside the Vanilla BDS offering, many community projects exist, in a variety 
 
 ### TypeScript
 
+-   [BDSX](https://github.com/bdsx/bdsx)
 -   [LeafMCBE](https://github.com/LeafMCBE/LeafMCBE)
 -   [PowerAllay](https://github.com/PowerAllay/PowerAllay)
 
