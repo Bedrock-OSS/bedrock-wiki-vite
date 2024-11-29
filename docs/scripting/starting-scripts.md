@@ -8,6 +8,7 @@ mentions:
     - JaylyDev
     - SmokeyStack
     - kumja1
+    - SimpleDevMCBE
 description: Start scripting in MCBE.
 ---
 
@@ -16,7 +17,7 @@ This script API page assumes basic knowledge of pack setup for add-ons. For info
 :::
 
 ::: warning
-The Script API is currently in active development, and breaking changes are frequent. This page assumes the format of Minecraft 1.21.20
+The Script API is currently in active development, and breaking changes are frequent. This page assumes the format of Minecraft 1.21.40x.
 :::
 
 ## Overview
@@ -77,14 +78,16 @@ This problem causes Minecraft to stop the scripts from running and throws error 
     "capabilities": ["script_eval"],
     "dependencies": [
         {
-            // Enables the use of @minecraft/server module, with a version of 1.13.0.
+            // Enables the use of @minecraft/server module, with a version of 1.15.0.
+            // It must be the latest version or it might not work!
             "module_name": "@minecraft/server",
-            "version": "1.13.0"
+            "version": "1.15.0"
         },
         {
-            // Enables the use of @minecraft/server-ui module, with a version of 1.2.0.
+            // Enables the use of @minecraft/server-ui module, with a version of 1.3.0.
+            // It must be the latest version or it might not work!
             "module_name": "@minecraft/server-ui",
-            "version": "1.2.0"
+            "version": "1.3.0"
         }
     ]
 }
@@ -95,8 +98,10 @@ If your project needs other module to run your code, add the other dependencies 
 **Stable API modules**, these do not require the Beta APIs experiment to be turned on. Most features are included in stable APIs, and will not break or be changed when Minecraft is updated.
 
 -   `@minecraft/server`:
-
-    -   [`1.13.0`](https://www.npmjs.com/package/@minecraft/server/v/1.13.0) (Latest version)
+  
+    -   [`1.15.0`](https://www.npmjs.com/package/@minecraft/server/v/1.15.0) (Latest version)
+    -   [`1.14.0`](https://www.npmjs.com/package/@minecraft/server/v/1.14.0) 
+    -   [`1.13.0`](https://www.npmjs.com/package/@minecraft/server/v/1.13.0)
     -   [`1.12.0`](https://www.npmjs.com/package/@minecraft/server/v/1.12.0)
     -   [`1.11.0`](https://www.npmjs.com/package/@minecraft/server/v/1.11.0)
     -   [`1.10.0`](https://www.npmjs.com/package/@minecraft/server/v/1.10.0)
@@ -112,7 +117,9 @@ If your project needs other module to run your code, add the other dependencies 
     -   [`1.0.0`](https://www.npmjs.com/package/@minecraft/server/v/1.0.0)
 
 -   `@minecraft/server-ui`:
-    -   [`1.2.0`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.2.0) (Latest version)
+
+    -   [`1.3.0`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.3.0) (Latest version)
+    -   [`1.2.0`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.2.0)
     -   [`1.1.0`](https://www.npmjs.com/package/@minecraft/server/v/1.1.0)
     -   [`1.0.0`](https://www.npmjs.com/package/@minecraft/server/v/1.0.0) (Requires `@minecraft/server@1.2.0`)
 
@@ -120,9 +127,12 @@ If your project needs other module to run your code, add the other dependencies 
 
 -   `@minecraft/server`:
 
-    -   [`1.14.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.14.0-beta.1.21.20-stable)
+    -   [`1.16.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.16.0-beta.1.21.40-stable) (1.21.40x only)
+    -   [`1.15.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.15.0-beta.1.21.30-stable) (1.21.30x only)
+    -   [`1.14.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.14.0-beta.1.21.20-stable) (1.21.20x only)
 
 -   `@minecraft/server-ui`:
+    -   [`1.4.0-beta`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.4.0-beta.1.21.40-stable) (This can be for 1.21.30 or 1.21.40x) (This npm.js package assumes version 1.21.40 but can be found in 1.21.30 [`here`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.4.0-beta.1.21.30-stable) )
     -   [`1.3.0-beta`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.3.0-beta.1.21.20-stable)
 -   `@minecraft/server-gametest`:
 
@@ -194,16 +204,16 @@ These allow for enhanced auto-completions and validation when used inside of you
 Latest beta API modules:
 
 ```bash
-npm i @minecraft/server@1.14.0-beta.1.21.20-stable
-npm i @minecraft/server-ui@1.3.0-beta.1.21.20-stable
-npm i @minecraft/server-gametest@1.0.0-beta.1.21.20-stable
-npm i @minecraft/server-admin@1.0.0-beta.1.21.20-stable
-npm i @minecraft/server-net@1.0.0-beta.1.21.20-stable
+npm i @minecraft/server@1.16.0-beta.1.21.40-stable
+npm i @minecraft/server-ui@1.4.0-beta.1.21.40-stable
+npm i @minecraft/server-gametest@1.0.0-beta.1.21.40-stable
+npm i @minecraft/server-admin@1.0.0-beta.1.21.40-stable
+npm i @minecraft/server-net@1.0.0-beta.1.21.40-stable
 ```
 
 Latest stable API modules:
 
 ```bash
-npm i @minecraft/server@1.13.0
-npm i @minecraft/server-ui@1.2.0
+npm i @minecraft/server@1.15.0
+npm i @minecraft/server-ui@1.3.0
 ```
