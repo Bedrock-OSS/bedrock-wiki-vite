@@ -9,6 +9,7 @@ mentions:
     - SmokeyStack
     - kumja1
     - SimpleDevMCBE
+    - jeanmajid
 description: Start scripting in MCBE.
 ---
 
@@ -98,9 +99,10 @@ If your project needs other module to run your code, add the other dependencies 
 **Stable API modules**, these do not require the Beta APIs experiment to be turned on. Most features are included in stable APIs, and will not break or be changed when Minecraft is updated.
 
 -   `@minecraft/server`:
-  
-    -   [`1.15.0`](https://www.npmjs.com/package/@minecraft/server/v/1.15.0) (Latest version)
-    -   [`1.14.0`](https://www.npmjs.com/package/@minecraft/server/v/1.14.0) 
+
+    -   [`1.16.0`](https://www.npmjs.com/package/@minecraft/server/v/1.16.0) (Latest version)
+    -   [`1.15.0`](https://www.npmjs.com/package/@minecraft/server/v/1.15.0)
+    -   [`1.14.0`](https://www.npmjs.com/package/@minecraft/server/v/1.14.0)
     -   [`1.13.0`](https://www.npmjs.com/package/@minecraft/server/v/1.13.0)
     -   [`1.12.0`](https://www.npmjs.com/package/@minecraft/server/v/1.12.0)
     -   [`1.11.0`](https://www.npmjs.com/package/@minecraft/server/v/1.11.0)
@@ -127,24 +129,25 @@ If your project needs other module to run your code, add the other dependencies 
 
 -   `@minecraft/server`:
 
+    -   [`1.17.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.17.0-beta.1.21.50-stable) (1.21.50x only)
     -   [`1.16.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.16.0-beta.1.21.40-stable) (1.21.40x only)
     -   [`1.15.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.15.0-beta.1.21.30-stable) (1.21.30x only)
     -   [`1.14.0-beta`](https://www.npmjs.com/package/@minecraft/server/v/1.14.0-beta.1.21.20-stable) (1.21.20x only)
 
 -   `@minecraft/server-ui`:
-    -   [`1.4.0-beta`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.4.0-beta.1.21.40-stable) (This can be for 1.21.30 or 1.21.40x) (This npm.js package assumes version 1.21.40 but can be found in 1.21.30 [`here`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.4.0-beta.1.21.30-stable) )
-    -   [`1.3.0-beta`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.3.0-beta.1.21.20-stable)
+    -   [`1.4.0-beta`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.4.0-beta.1.21.50-stable) (This can be for 1.21.3x or 1.21.4x or 1.21.5x) (This npm.js package assumes version 1.21.50 but can be found in 1.21.40 [`here`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.4.0-beta.1.21.40-stable) )
+    -   [`1.3.0-beta`](https://www.npmjs.com/package/@minecraft/server-ui/v/1.3.0-beta.1.21.23-stable)
 -   `@minecraft/server-gametest`:
 
-    -   [`1.0.0-beta`](https://www.npmjs.com/package/@minecraft/server-gametest/v/1.0.0-beta.1.21.20-stable)
+    -   [`1.0.0-beta`](https://www.npmjs.com/package/@minecraft/server-gametest/v/1.0.0-beta.1.21.50-stable)
 
 -   `@minecraft/server-net`:
 
-    -   [`1.0.0-beta`](https://www.npmjs.com/package/@minecraft/server-net/v/1.0.0-beta.1.21.20-stable) (Bedrock Dedicated Server module only, must be enabled in `permission.json` as it is not enabled by default)
+    -   [`1.0.0-beta`](https://www.npmjs.com/package/@minecraft/server-net/v/1.0.0-beta.1.21.50-stable) (Bedrock Dedicated Server module only, must be enabled in `permission.json` as it is not enabled by default)
 
 -   `@minecraft/server-admin`:
 
-    -   [`1.0.0-beta`](https://www.npmjs.com/package/@minecraft/server-admin/v/1.0.0-beta.1.21.20-stable) (Bedrock Dedicated Server module only)
+    -   [`1.0.0-beta`](https://www.npmjs.com/package/@minecraft/server-admin/v/1.0.0-beta.1.21.50-stable) (Bedrock Dedicated Server module only)
 
 In order to use the `eval()` function or `Function()` constructors within your code, you can add the following in the manifest capabilities:
 
@@ -184,7 +187,7 @@ Official documentation are hosted on Microsoft Learn and can be found here:
 
 -   [`@minecraft/server`](https://learn.microsoft.com/minecraft/creator/scriptapi/mojang-minecraft/mojang-minecraft)
 -   [`@minecraft/server-gametest`](https://learn.microsoft.com/minecraft/creator/scriptapi/mojang-gametest/mojang-gametest)
--   [`@minecraft/server-ui`](https://learn.microsoft.com/minecraft/creator/scriptapi/mojang-minecraft-ui/mojang-minecraft-ui)
+-   [`@minecraft/server-ui`](https://learn.microsoft.com/en-us/minecraft/creator/scriptapi/minecraft/server-ui/minecraft-server-ui)
 -   [`@minecraft/server-admin`](https://learn.microsoft.com/minecraft/creator/scriptapi/mojang-minecraft-server-admin/mojang-minecraft-server-admin)
 -   [`@minecraft/server-net`](https://learn.microsoft.com/minecraft/creator/scriptapi/mojang-net/mojang-net)
 
@@ -204,16 +207,16 @@ These allow for enhanced auto-completions and validation when used inside of you
 Latest beta API modules:
 
 ```bash
-npm i @minecraft/server@1.16.0-beta.1.21.40-stable
-npm i @minecraft/server-ui@1.4.0-beta.1.21.40-stable
-npm i @minecraft/server-gametest@1.0.0-beta.1.21.40-stable
-npm i @minecraft/server-admin@1.0.0-beta.1.21.40-stable
-npm i @minecraft/server-net@1.0.0-beta.1.21.40-stable
+npm i @minecraft/server@1.17.0-beta.1.21.50-stable
+npm i @minecraft/server-ui@1.4.0-beta.1.21.50-stable
+npm i @minecraft/server-gametest@1.0.0-beta.1.21.50-stable
+npm i @minecraft/server-admin@1.0.0-beta.1.21.50-stable
+npm i @minecraft/server-net@1.0.0-beta.1.21.50-stable
 ```
 
 Latest stable API modules:
 
 ```bash
-npm i @minecraft/server@1.15.0
-npm i @minecraft/server-ui@1.3.0
+npm i @minecraft/server
+npm i @minecraft/server-ui
 ```
