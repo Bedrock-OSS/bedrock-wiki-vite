@@ -82,7 +82,7 @@ This problem causes Minecraft to stop the scripts from running and throws error 
             // Enables the use of @minecraft/server module, with a version of 1.15.0.
             // It must be the latest version or it might not work!
             "module_name": "@minecraft/server",
-            "version": "1.15.0"
+            "version": "1.16.0"
         },
         {
             // Enables the use of @minecraft/server-ui module, with a version of 1.3.0.
