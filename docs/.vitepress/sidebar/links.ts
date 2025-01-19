@@ -2,7 +2,7 @@ import { readdirSync, readFileSync, statSync } from "fs";
 import matter, { GrayMatterFile } from "gray-matter";
 import { basename, join, relative } from "path";
 
-import { Sidebar, SidebarSection } from "../theme";
+import { SidebarItem, SidebarSection } from "../theme";
 import tags from "../tags";
 import sort from "./sort";
 
@@ -12,7 +12,7 @@ function formatLink(path: string) {
   return "/" + path.split(/\\|\//g).join("/").replace(".md", "");
 }
 
-export function resolveLinks(context: Sidebar | SidebarSection, dir: string = docsDirectory) {
+export function resolveLinks(context: SidebarItem | SidebarSection, dir: string = docsDirectory) {
   const isInSection = "categories" in context;
   const entries = readdirSync(dir);
 

@@ -9,7 +9,16 @@ import SidebarSection from "./SidebarSection.vue";
 import SidebarLink from "./SidebarLink.vue";
 
 const { page, theme } = useData();
-const { links, sections } = theme.value.sidebar;
+
+const sidebar = computed(() => page.value.frontmatter.page || "default");
+
+let links = theme.value.sidebar[sidebar.value].links;
+let sections = theme.value.sidebar[sidebar.value].sections;
+
+watch(sidebar, (sidebarPage) => {
+  links = theme.value.sidebar[sidebarPage].links;
+  sections = theme.value.sidebar[sidebarPage].sections;
+});
 
 const isMobile = useIsMobile();
 
@@ -36,13 +45,8 @@ function toggleSection(id: string) {
       </template>
       <SidebarLink v-for="link in links" :key="link.link" v-bind="link" />
     </ul>
-    <SidebarSection
-      v-for="section in sections"
-      :key="section.id"
-      v-bind="section"
-      :open="openSection === section.id || activeSection === section.id"
-      @click="() => toggleSection(section.id)"
-    />
+    <SidebarSection v-for="section in sections" :key="section.id" v-bind="section"
+      :open="openSection === section.id || activeSection === section.id" @click="() => toggleSection(section.id)" />
   </div>
 </template>
 
@@ -67,8 +71,8 @@ function toggleSection(id: string) {
     list-style: none;
   }
 
-  & > ul,
-  &__section > ul {
+  &>ul,
+  &__section>ul {
     margin: 0.3em;
     border-bottom: var(--border);
   }

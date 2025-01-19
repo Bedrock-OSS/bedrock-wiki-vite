@@ -36,11 +36,11 @@ export function resolveSections(sidebar: Sidebar) {
       resolveCategories(section);
       resolveLinks(section, joinedPath);
 
-      sidebar.sections.push(section);
+      sidebar[sectionFrontmatter.data.page || "default"].sections.push(section);
     }
   }
 
-  sort(sidebar.sections);
+  Object.entries(sidebar).forEach((item) => sort(item[1].sections));
 }
 
 export default function validateSection(id: string, { data }: GrayMatterFile<string>) {

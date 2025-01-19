@@ -11,11 +11,12 @@ export default generateSidebar();
 
 function generateSidebar() {
   const sidebar: Sidebar = {
-    links: [],
-    sections: [],
+    default: { links: [], sections: [] },
+    protocols: { links: [], sections: [] },
   };
 
-  resolveLinks(sidebar);
+  resolveLinks(sidebar.default);
+  resolveLinks(sidebar.protocols);
   resolveSections(sidebar);
 
   return sidebar;

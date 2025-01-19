@@ -19,6 +19,10 @@ export interface NavigationItem {
 }
 
 export interface Sidebar {
+  [path: string]: SidebarItem;
+}
+
+export interface SidebarItem {
   links: SidebarLink[];
   sections: SidebarSection[];
 }

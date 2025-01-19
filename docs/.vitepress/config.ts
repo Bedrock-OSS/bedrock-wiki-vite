@@ -48,6 +48,10 @@ export default defineConfigWithTheme<ThemeConfig>({
 
     navigation: [
       {
+        text: "Protocol Docs",
+        link: "/protocols/index",
+      },
+      {
         text: "Discord",
         link: "/discord",
       },
