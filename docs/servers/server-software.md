@@ -1,6 +1,5 @@
 ---
 title: Bedrock Server Software
-category: Software
 mentions:
     - SirLich
     - DevGod6969
@@ -34,18 +33,20 @@ Alongside the Vanilla BDS offering, many community projects exist, in a variety 
 These other projects get separated into Custom Server Software (Custom) and BDS-Based.
 
 Types of Server Software:
-- Custom Server Software = Server Software that is build from completely scratch.
-- BDS-Based = Server Software that uses BDS as a base and modifies it.
+
+-   Custom Server Software = Server Software that is build from completely scratch.
+-   BDS-Based = Server Software that uses BDS as a base and modifies it.
 
 You might notice that there is a lot of Custom Server Software, compared to BDS-Based ones.
 This has plenty of reasons, the biggest being:
-- We did not have an official Server Software for a long time, the first Release of BDS was on August 28, 2018... about 7 years after the first release for Bedrock Edition in 2011
-- The Symbols (also referred to as Mappings) have first been stripped to reduce the amount of information contained and finally been removed from the game in 1.21.10, due to which a lot of BDS-Based software died
+
+-   We did not have an official Server Software for a long time, the first Release of BDS was on August 28, 2018... about 7 years after the first release for Bedrock Edition in 2011
+-   The Symbols (also referred to as Mappings) have first been stripped to reduce the amount of information contained and finally been removed from the game in 1.21.10, due to which a lot of BDS-Based software died
 
 ## Active Software
 
 | Name                                                                            | Description                                                                                      | Language                     | Type      |
-|---------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|------------------------------|-----------|
+| ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ | ---------------------------- | --------- |
 | [Endstone](https://github.com/EndstoneMC/endstone)                              | A High-level Plugin API for Modding Bedrock Dedicated Servers, in both Python and C++.           | C++, Python                  | BDS-Based |
 | [LeviLamina](https://github.com/LiteLDev/LeviLamina)                            | A lightweight, modular and versatile mod loader for Minecraft Bedrock Edition.                   | C++                          | BDS-Based |
 | [RAstra](https://github.com/bedrock-crustaceans/RAstra)                         | Modern Minecraft Bedrock Server Software written in Rust.                                        | Rust, JavaScript, TypeScript | Custom    |
@@ -64,7 +65,7 @@ This has plenty of reasons, the biggest being:
 ## Discontinued Software
 
 | Name                                                                                   | Description                                                                                                                       | Language   | Type      |
-|----------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|------------|-----------|
+| -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- | ---------- | --------- |
 | [AllayBE](https://github.com/AllayBE/AllayBE)                                          |                                                                                                                                   | C++        | Custom    |
 | [BedrockPowder](https://github.com/BedrockPowder/BedrockPowder)                        | A Bedrock Edition Server software written on C++                                                                                  | C++        | Custom    |
 | [Cenisys](https://github.com/iTXTech/Cenisys)                                          | Clean, concurrent, coroutine-enabled Minecraft server written in C++.                                                             | C++        | Custom    |
@@ -154,7 +155,7 @@ This has plenty of reasons, the biggest being:
 
 ::: tip
 Since new software gets created all the time, and old software becomes unmaintained it is always important to update this list.
-So if you know a server software that is missing here or know that a server software is no longer maintained, then please update this list and create a PR. 
+So if you know a server software that is missing here or know that a server software is no longer maintained, then please update this list and create a PR.
 :::
 
 ## Further Information
