@@ -160,4 +160,4 @@ So if you know a server software that is missing here or know that a server soft
 
 ## Further Information
 
-If you want to create your own server software/understand how they work, take a look into the [MCBE Protocol](./bedrock) and [RakNet](./raknet) documentation.
+If you want to create your own server software/understand how they work, take a look into the [MCBE Protocol](../protocols/bedrock) and [RakNet](../protocols/raknet) documentation.
