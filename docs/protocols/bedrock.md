@@ -1,5 +1,6 @@
 ---
 title: Bedrock Protocol
+page: protocols
 category: MCBE Protocol
 mentions:
     - theaddonn

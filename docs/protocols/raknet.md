@@ -1,5 +1,6 @@
 ---
 title: RakNet Protocol
+page: protocols
 category: RakNet Protocol
 mentions:
     - ZestiiSpaghett

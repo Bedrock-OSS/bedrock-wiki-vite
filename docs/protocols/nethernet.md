@@ -1,5 +1,6 @@
 ---
 title: NetherNet Protocol
+page: protocols
 category: NetherNet Protocol
 mentions:
     - theaddonn
