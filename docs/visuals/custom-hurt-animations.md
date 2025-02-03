@@ -4,7 +4,7 @@ tags:
     - intermediate
 mentions:
     - MedicalJewel105
-    - stekgames
+    - stekdev17
 category: Tutorials
 description: Tutorial on how to trigger custom animation when entity is hurt.
 ---
