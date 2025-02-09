@@ -1,1 +1,0 @@
-import{_ as e,j as t,k as n}from"./chunks/framework.5faZCu8v.js";const m=JSON.parse('{"title":"Concepts","description":"","frontmatter":{"title":"Concepts"},"headers":[],"relativePath":"concepts/index.md","filePath":"concepts/index.md"}'),c={name:"concepts/index.md"};function o(s,a,r,p,i,d){return n(),t("div")}const f=e(c,[["render",o]]);export{m as __pageData,f as default};
