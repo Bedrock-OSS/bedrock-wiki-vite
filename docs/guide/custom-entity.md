@@ -987,7 +987,7 @@ Your folder structure should look like this:
 	'RP/animation_controllers/ghost.ac.json',
 	'RP/entity/ghost.ce.json',
 	'RP/models/entity/ghost.geo.json',
-	'RP/render_controllers/ghost.rc.json',
+	'RP/render_controllers/entity/ghost.rc.json',
 	'RP/textures/entity/ghost.png',
 	'RP/textures/items/ectoplasm.png',
 	'RP/textures/item_texture.json',
